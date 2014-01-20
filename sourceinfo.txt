@@ -1,0 +1,12 @@
+Editor: Max Friedlaender (1852–1934)
+Publisher Info.: Schubert-Album Sammlung der Lieder für eine Singstimme mit Pianoforte Begleitung, Bd.1
+Leipzig: C.F. Peters, No.20a, n.d. Plate 9023.
+Copyright: Public Domain
+Misc. Notes:
+    scan: score scanned at 600dpi
+    filter: score filtered with 2-point algorithm explained in High Quality Scanning 
+
+    I provide the original scanned version and the filtered, because the filter
+does some changes (smoothening, sharpening borders) and some portions of the
+scan get lost sometimes (when they are too small e.g.) - so you can choose your
+favorite. You may ask me for a manually cleaned version.

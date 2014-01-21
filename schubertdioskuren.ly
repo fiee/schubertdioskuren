@@ -90,45 +90,45 @@ voice = \relative c'' {
   R2. |
   r4 r4 c8. c16 |
   c4 aes c8 des |
-  c4 bes ees8. ees16 | \break 
+  c4 bes ees8. ees16 |  
   ees4 c ees8. des16 |
   bes4 c r4 |
 
   R2. |
 
   r4 r4 aes8 g |
-  f4. bes8 aes g | \break
+  f4. bes8 aes g | 
   c4 aes ees'8. ees16 |
   ees4 c des8. des16 |
   des4 bes c8. bes16 |
   bes4 aes c8. bes16 |
-  bes2. | \break 
+  bes2. |  
   aes4 r4 r4 |
 
   r4 r4 c8. c16 |
   c4. g8 aes8. f16 |
   e4 c des'8. des16 |
-  des4. f,8 f8. g16 | \break 
+  des4. f,8 f8. g16 |  
   aes4 g r4 |
 
   r4 r4 ees'8. ees16 |
   ees4. c8 bes aes |
   aes4 g ees'8. ees16 |
-  ees4. c8 bes bes | \break 
+  ees4. c8 bes bes |  
   d2. |
   ees4 r4 r4 |
 
   r4 r4 c8. c16 |
-  c4 aes c8 des | \break 
+  c4 aes c8 des |  
   c4 bes ees8. ees16 |
   ees4 c ees8. des16 |
-  bes4 c aes8 g | \break 
+  bes4 c aes8 g |  
   f4. bes8 aes g |
   c4 aes ees'8. ees16 |
-  ees4. c8 des8. des16 | \break 
+  ees4. c8 des8. des16 |  
   des4 bes c8. bes16 |
   bes4 aes c8. bes16 |
-  bes2. | \break 
+  bes2. |  
   aes4 r4 r4 |
 
   R2. |

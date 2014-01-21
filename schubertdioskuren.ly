@@ -35,53 +35,27 @@ global = {
 
 % Tweaks
 
-smallStem = {
-  \once \override Stem.length = #4.5
-}
+smallStem = \once \override Stem.length = #4.5
 
-changeRight = {
-  \change Staff = "right"
-}
+changeRight = \change Staff = "right"
 
-changeLeft = {
-  \change Staff = "left"
-}
+changeLeft = \change Staff = "left"
 
-hideStem = {
-  \override Stem.stencil = ##f
-}
+shiftLeft = \once \override NoteColumn.horizontal-shift = #1
 
-shiftLeft = {
-  \once \override NoteColumn.horizontal-shift = #1
-}
+offsetDynamic = \once \override DynamicText.X-offset = #-4
 
-offsetDynamic = {
-  \once \override DynamicText.X-offset = #-4
-}
+shapeSlur = \shape #'((0 . -0.2) (0 . 0) (0.7 . 0) (0 . -1.2)) Slur
 
-shapeSlur = {
-  \shape #'((0 . -0.2) (0 . 0) (0.7 . 0) (0 . -1.2)) Slur
-}
+shapeSlurA = \shape #'((0.7 . 0.8) (0 . 1) (0 . 1) (-0.7 . 0.8)) Slur
 
-shapeSlurA = {
-  \shape #'((0.7 . 0.8) (0 . 1) (0 . 1) (-0.7 . 0.8)) Slur
-}
+shapeTie = \shape #'((0.8 . -0.3) (0 . -0.3) (0 . -0.3) (0 . -0.3)) Tie
 
-shapeTie = {
-  \shape #'((0.8 . -0.3) (0 . -0.3) (0 . -0.3) (0 . -0.3)) Tie
-}
+tweakDamping = \once \override Beam.damping = #0.5
 
-tweakDamping = {
-  \once \override Beam.damping = #0.5
-}
+dropTies = \override Tie.Y-offset = #-0.8
 
-dropTies = {
-  \override Tie.Y-offset = #-0.8
-}
-
-dropAccent = {
-  \once \override Script.Y-offset = #-4.5
-}
+dropAccent = \once \override Script.Y-offset = #-4.5
 
 voice = \relative c'' {
   \global
@@ -148,7 +122,7 @@ verse = \lyricmode {
   Wer auch fest in sich be -- grün -- det,
   un -- ver -- zagt dem Sturm be -- geg -- net,
   fühlt sich doch in eu -- ren Strah -- len
-  dop -- ppelt mu -- tig und ge -- seg -- net. 
+  dop -- pelt mu -- tig und ge -- seg -- net. 
 
   Die -- ses Ru -- der, das ich schwin -- ge,
   Mee -- res -- flu  -- ten zu zer -- tei -- len,
@@ -186,7 +160,7 @@ right = \relative c' {
   <des f bes des>2 f8. g16 |
   <f aes>4( <e g>8) r8 <ees bes'>8.\pp <ees bes'>16 |
 
-  <ees bes'>2 \offsetDynamic <ees bes' ees>8.\mf <ees b' ees>16 |
+  <ees bes'>2 <ees bes' ees>8.\mf <ees b' ees>16 |
   << { \shapeSlur <c' ees>4.( <aes c>8 \stemDown \autoBeamOff <d, g bes>[ <f aes>]) | } \\ { ees2 s4 | } >>
   <d f aes>4( <ees g>) <ees bes' ees>8.\pp <ees b' ees>16 |
   << { <c' ees>4.( <aes c>8 \stemDown \autoBeamOff <g bes>[ <aes bes d>]) | } \\ { ees2 s4 | } >>
@@ -201,7 +175,7 @@ right = \relative c' {
     \\
 
     {
-      \hideStem
+      \omit Stem
       \shiftLeft
       \shapeSlurA
       aes2.( |
@@ -237,7 +211,7 @@ right = \relative c' {
 
   \dropTies
   <c ees aes>4 <des ees g des'>->~( <c ees aes c>) |
-  <des ees g bes>->~( <c ees aes>) \offsetDynamic <des ees g des'>->~(\ppp |
+  <des ees g bes>->~( <c ees aes>) <des ees g des'>->~(\ppp |
   <c ees aes c>) <des ees g bes>->~( <c ees aes>)\fermata |
 }
 
@@ -301,8 +275,8 @@ left = \relative c' {
   ees, g bes ees f, aes c f c, c' ees, ees' |
   ees, g bes ees ees, g bes ees ees, g bes ees |
   aes,, c ees aes aes, des ees g aes, c ees aes |
-  aes, des ees g aes, des ees aes aes, des ees g |
-  aes, des ees aes aes, des ees g <aes, c ees aes>4\fermata |
+  aes, des ees g aes, c ees aes aes, des ees g |
+  aes, c ees aes aes, des ees g <aes, c ees aes>4\fermata |
 }
 
 VoicePart = \new Staff \with {

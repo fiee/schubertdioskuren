@@ -4,9 +4,18 @@
   title = "Lied eines Schiffers and die Dioskuren"
   composer = "F. Schubert"
   poet = "Johann Mayrhofer"
-  opus = "Op. 65, nº 1"
+  opus = "Op. 65, No. 1"
   % Remove default LilyPond tagline
   tagline = ##f
+
+  mutopiacomposer = "SchubertF"
+  mutopiainstrument = "Voice and Piano"
+  source = "C.F. Peters, ca. 1910"
+  style = "Romantic"
+  copyright = "Public Domain"
+  maintainer = "Gonçalo Nogueira"
+  maintainerEmail = "jgoncalonogueira (at) gmail.com"
+  maintainerWeb = "http://about.me/goncalonogueira"
 }
 
 \paper {

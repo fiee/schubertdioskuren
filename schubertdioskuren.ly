@@ -43,7 +43,7 @@ changeLeft = \change Staff = "left"
 
 shiftLeft = \once \override NoteColumn.horizontal-shift = #1
 
-offsetDynamic = \once \override DynamicText.X-offset = #-4
+offsetDynamic = \once \override DynamicText.X-offset = #-4.5
 
 shapeSlur = \shape #'((0 . -0.2) (0 . 0) (0.7 . 0) (0 . -1.2)) Slur
 
@@ -144,9 +144,9 @@ right = \relative c' {
   <c ees>2\arpeggio <c ees>8. <bes des>16 |
   \changeLeft
   <g bes>4 <aes c> \changeRight c4 |
-  c4. des8 <aes! c> <g bes> |
+  c4. des8 <aes c> <g bes> |
   <c ees>4 <aes c> s4 |
-  c4. des8 <aes! c> <g bes> |
+  c4. des8 <aes c> <g bes> |
   <c ees>4 <aes c> <c ees>8( <bes c ees>) |
   <a c ees>2 <bes des>8( <aes bes des>) |
   <g bes des>2 \clef bass \stemDown <ees aes c>8.\pp( <des g bes>16) |
@@ -291,7 +291,8 @@ pianoPart = \new PianoStaff \with {
   \consists #Span_stem_engraver
   \override StaffGrouper.staff-staff-spacing.basic-distance = #0.1
   \override StaffGrouper.staff-staff-spacing.padding = #2
-  midiInstrument = #"piano"
+  midiInstrument = #"acoustic grand"
+  \accidentalStyle piano
 } <<
   \new Staff = "right" \right
   \new Staff = "left" { \clef bass \left }

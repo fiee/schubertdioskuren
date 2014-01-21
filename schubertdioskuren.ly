@@ -21,6 +21,7 @@
 
 \paper {
   page-count = #2
+  ragged-last-bottom = ##f
 }
 
 #(set-global-staff-size 18)

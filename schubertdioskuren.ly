@@ -20,7 +20,6 @@
 }
 
 \paper {
-  #(set-paper-size "a4")
   page-count = #2
 }
 

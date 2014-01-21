@@ -307,6 +307,7 @@ left = \relative c' {
 
 VoicePart = \new Staff \with {
   instrumentName = "Singstimme"
+  midiInstrument = #"clarinet"
 } { \voice }
 \addlyrics { \verse }
 
@@ -316,6 +317,7 @@ pianoPart = \new PianoStaff \with {
   \consists #Span_stem_engraver
   \override StaffGrouper.staff-staff-spacing.basic-distance = #0.1
   \override StaffGrouper.staff-staff-spacing.padding = #2
+  midiInstrument = #"piano"
 } <<
   \new Staff = "right" \right
   \new Staff = "left" { \clef bass \left }
@@ -326,6 +328,9 @@ pianoPart = \new PianoStaff \with {
     \VoicePart
     \pianoPart
   >>
+  \midi {
+    \tempo 4 = 50
+  }
   \layout {
     \context {
       \Staff

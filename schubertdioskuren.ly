@@ -4,10 +4,11 @@
   title = "Lied eines Schiffers and die Dioskuren"
   composer = "F. Schubert"
   poet = "Johann Mayrhofer"
-  opus = "Op. 65, No. 1"
+  opus = "D.360, Op. 65, No. 1"
   % Remove default LilyPond tagline
   tagline = ##f
 
+  % Mutopia headers
   mutopiacomposer = "SchubertF"
   mutopiainstrument = "Voice and Piano"
   source = "C.F. Peters, ca. 1910"

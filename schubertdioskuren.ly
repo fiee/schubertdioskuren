@@ -1,7 +1,7 @@
 \version "2.18.0"
 
 \header {
-  title = "Lied eines Schiffers and die Dioskuren"
+  title = "Lied eines Schiffers an die Dioskuren"
   composer = "F. Schubert"
   poet = "Johann Mayrhofer"
   opus = "D.360, Op. 65, No. 1"
@@ -116,7 +116,7 @@ verse = \lyricmode {
   Di -- os -- ku -- ren, Zwil -- lings -- ster -- ne,
   die ihr leuch -- tet mei -- nem Na -- chen,
 
-  mich be -- ru -- hig auf dem Mee -- re eu -- re Mil -- de,
+  mich be -- ru -- higt auf dem Mee -- re eu -- re Mil -- de,
   eu -- er Wa -- chen, eu -- re Mil -- de, eu -- er Wa -- chen.
 
   Wer auch fest in sich be -- grün -- det,
@@ -127,7 +127,7 @@ verse = \lyricmode {
   Die -- ses Ru -- der, das ich schwin -- ge,
   Mee -- res -- flu  -- ten zu zer -- tei -- len,
   hän -- ge ich, so ich ge -- bor -- gen,
-  auf an eu -- res Tem -- pel Säu -- len,
+  auf an eu -- res Tem -- pels Säu -- len,
   Di -- os -- ku -- ren, Zwil -- lings -- ster -- ne.
   
 }
